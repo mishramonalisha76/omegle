@@ -7,6 +7,7 @@ import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import StartChat from "./dashboard/startChat";
+import Dashboard from "./dashboard/dashboard";
 
 
 export default function RouterComponent() {
@@ -32,7 +33,7 @@ export default function RouterComponent() {
           <Router>
             <Routes>
               <Route path="/" element={<Landing />} />
-              <Route path="/chat" element={<StartChat />} />
+              <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
           </Router>
       </RainbowKitProvider>

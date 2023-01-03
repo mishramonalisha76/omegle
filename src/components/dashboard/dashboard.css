@@ -1,0 +1,12 @@
+.dashobard-hero-text {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 38px;
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 3%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid black;
+    text-align: center;
+}

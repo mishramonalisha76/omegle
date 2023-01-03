@@ -1,0 +1,40 @@
+import Navbar from "../navbar";
+import { Link } from "react-router-dom";
+import SecondSection from "./second-section";
+import Hero from "../../assets/hero.png";
+import "./landing.css";
+import 'animate.css';
+import Footer from "../footer";
+function Landing() {
+  return (
+    <div className="landing">
+      <Navbar />
+      <div className="landing-content">
+        <div className="landing-hero">
+          <div className="landing-hero-text  animate__animated animate__fadeInLeft">
+            <h1 >Say HI to Domegle</h1>
+            <p>
+              Vote from any chain you want and maximize your voting power
+            </p>
+            <div>
+            <Link to="/chat">
+                <button>Start Chat</button>
+              </Link>
+              <Link to="/video">
+            <button>Start Video</button>
+            </Link>
+          </div>
+          </div>
+         
+          <div className="landing-hero-img-div">
+            <img className="landing-hero-img animate__animated animate__fadeInRight" src={Hero} alt="multchain"/>
+          </div>
+        </div>
+      </div>
+      <SecondSection/>
+      <Footer/>
+    </div>
+  );
+}
+
+export default Landing;
